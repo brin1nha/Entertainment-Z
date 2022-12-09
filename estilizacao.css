@@ -72,7 +72,6 @@ nav {
    margin: 1px;
 }
 
-
 /*pag1_home*/
 .title {
    color: black;
@@ -109,7 +108,7 @@ nav {
    color:white;
 }
 
-/*estilo pag2_jogosedesenhos*/
+/*pag2_jogosedesenhos*/
 .container{
    border-radius: 5px;
    border: black 5px solid;
@@ -136,7 +135,7 @@ video{
    margin: 10px;
 }
 
-/*estilo pag3_faleconosco*/
+/*pag3_faleconosco*/
 .caixa_central{
    text-align: left;
    margin: 25px auto;
@@ -181,7 +180,7 @@ input [type="radio"]{
    margin-left: 30px;
 }
 
-/*estilo padrão para as paginas (footer)*/
+/*all pages (footer)*/
 footer{
    position: relative;
    width: 100%;
@@ -256,6 +255,7 @@ footer .menu li a:hover {
    opacity: 1;
 }
 
+/*responsive*/
 @media only screen and (max-width: 480px){
    .logo {
       font-size: 12vw;
