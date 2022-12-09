@@ -1,4 +1,11 @@
 /*estilo padrão para as páginas*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800,900&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
 html {
    scroll-behavior: smooth;
 }
@@ -6,125 +13,124 @@ body{
    top: auto;
    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("media/background1.gif");
    background-size: cover;
-   width: 100%;
-   height: 100%;
    margin: 0;
    padding: 0;
+   border: 0;
+}
+ul{
+   list-style: none;
+}
+a:-webkit-any-link {
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   text-decoration: none;
 }
 header {
-   height: 90vh;
+   width: 100%;
+   height: 92vh;
+   border: 2px solid black;
+   background-color: rgba(0, 0, 0, 0.8);
+   margin: 0;
 }
-
 nav {
    position: sticky;
    top: 0;
-   z-index: 2;
+   z-index: 1;
 }
 .logo{
-   border: 2px solid black;
-   background-color: rgba(0, 0, 0, 0.8);
    color: #0099ff;
+   text-shadow: 2px 2px 2px #ff7300;
    font-family: Impact;
-   font-size: 5em;
    font-style: normal;
    font-variant: small-caps;
    font-weight: bold;
    font-stretch: normal;
-   text-shadow: 2px 2px 2px #ff7300;
+   font-size: 4.5em;
    text-align: center;
-   padding: 45vh 5vh 40vh 5vh;
-   margin: 0px;
+   padding-top: 30vh;
 }
-#menu {
+#nav {
+   display: flex;
+   justify-content: center;
    background-color: #ff7300;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px; 
    text-align: center;
    text-decoration: none;
-   padding: 12px;
+   height: 8vh;
 }
-.itens {
-   display: inline;
-   border: 2px solid black;
+.navItens {
+   display: inline-block;
+   border: 1px solid black;
    border-radius: 5px;
    background-color: #0099ff;
-   font-family:'Franklin Gothic Medium';
-   padding: 10px;
-   margin: 2px;
-}
-a:-webkit-any-link {
-   color: black;
-   cursor: pointer;
-   text-decoration: none;
+   font-family:'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 1em;
+   height: 7.7vh;
+   padding: 1px 4vh;
+   margin: 1px;
 }
 
-/*estilo pag1_home*/
-.titulo {
+
+/*pag1_home*/
+.title {
+   color: black;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 1.25em;
+   font-weight: bold;
    border: 2px solid black;
-   border-radius: 25px;
-   background-color: rgba(0, 153, 255, 0.7);
-   font-family: Helvetica;
-   font-size: 30px;
+   border-radius: 15px;
+   background-color: hsla(204, 100%, 50%, 0.6);
    padding: 20px;
    margin: 50px 10px 10px 10px;
 }
-.texto {
+.text {
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   border: 2px dashed #0099ff;
-   border-top-left-radius: 25px;
-   border-bottom-right-radius: 25px;
+   border: 0.5% dashed #0099ff;
+   border-top-left-radius: 5px;
+   border-bottom-right-radius: 5%;
    background-color: rgba(0, 0, 0, 0.7);
    color: rgba(255, 255, 255, 0.7);
    text-align: justify;
    line-height: 1.6;
    font-family: Arial;
-   font-size: 18px;
-   padding:20px;
-   margin: 10px;
+   font-size: 1em;
+   padding:5%;
+   margin: 0.5%;
+}
+.h1{
+   font-size:3em;
+   text-align: center;
+   padding-top: 15%;
+   color:white;
 }
 
 /*estilo pag2_jogosedesenhos*/
 .container{
-   width: 90%;
-   margin: 10px auto;
    border-radius: 5px;
    border: black 5px solid;
    text-align: center;
    background-color: rgba(0, 0, 0, 0.7);
-}
-.caixa_esquerda{
-   border-radius: 10px;
-   background-color: rgb(0, 153, 255, 0.5);
-   color:#ff7300;
-   width: 75%;
-   padding: 10px;
-   margin: 10px;
-}
-.caixa_direita{
-   margin-left: 20%;
-   padding: 10px;
-   width: 75%;
-   border-radius: 10px;
-   background-color: rgb(255, 115, 0, 0.5);
-   color: #0099ff;
+   width: 90%;
+   margin: 5% auto;
 }
 img{
-   height: 150px;
-   width: 150px;
+   width: 250px;
    border-radius: 20px;
    margin: 10px;
 }
 video{
-   height: 150px;
-   width: 330px;
+   width: 250px;
    border-style: groove;
    border-radius: 40px;
    margin: 10px;
 }
 .gif{
-   height: 300px;
-   width: 400px;
+   width: 250px;
    border-style: ridge;
    border-radius: 10px;
    margin: 10px;
@@ -133,7 +139,7 @@ video{
 /*estilo pag3_faleconosco*/
 .caixa_central{
    text-align: left;
-   margin: 0 auto;
+   margin: 25px auto;
    padding: 20px;
    width: 50%;
    border-radius: 10px;
@@ -143,7 +149,9 @@ video{
    font-weight: bold;
    text-shadow: 1px 1px 1px black;
 }
-input{
+
+.caixainput{
+   font-size: 1em;
    width: 90%;
    margin-inline-end: 0;
    border-radius: 5px;
@@ -151,9 +159,9 @@ input{
    color: black;
    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
-input[type="radio"]{
-   width: 20px;
-   margin-inline-end: 20px;
+input [type="radio"]{
+   width: 20vw;
+   margin-inline-end: 20vw;
    color: black;
    box-shadow: 2px 2px 2px rgba(0,0,0,0.0);
 }
@@ -175,9 +183,110 @@ input[type="radio"]{
 
 /*estilo padrão para as paginas (footer)*/
 footer{
-   color:#0099ff;
-   font-family: Courier;
-   font-size: 16;
-   font-weight:bold;
+   position: relative;
+   width: 100%;
+   background: #ff7300;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   min-height: 100px;
+   padding: 20px 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+footer .caixa_menor{
+   width: 65%;
+   background-color: #0090f0;
+   border-radius: 10px;
+   border: 1px solid black;
+   padding: 5px;
+}
+footer .creator_info {
+   font-size: 0;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   color: black;
+   text-decoration: none;
+   justify-content: center;
    text-align: center;
+}
+footer .creator_info > li {
+   display: inline-block;
+   align-items: center;
+   padding: 10px;
+   font-size: 11pt;
+}
+footer .social_icon,
+footer .menu
+{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0;
+   flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li
+{
+   list-style: none;
+}
+footer .social_icon li a {
+   font-size: 2em;
+   color: black;
+   margin: 0 10px;
+   display: inline-block;
+   transition: 0.5%;
+}
+footer .social_icon li a:hover{
+   transform: translateY(-5px);
+}
+footer .menu li a {
+   font-size: 0.9em;
+   font-weight: 520;
+   color: black;
+   margin: 0 10px;
+   display: inline-block;
+   text-decoration: none;
+   opacity: 0.75;
+}
+footer .menu li a:hover {
+   opacity: 1;
+}
+
+@media only screen and (max-width: 480px){
+   .logo {
+      font-size: 12vw;
+   }
+   .bnt{
+      position: sticky;
+      top: 0;
+      z-index: 1;
+   }
+   #nav{
+      display: none;
+   }
+   img, video, .gif{
+      width: 90%;
+   }
+   .h1{
+      font-size:2em;
+   }
+   .caixa_central{
+      width:95%;
+   }
+   footer{
+      padding: 10px 25px;
+   }
+   footer .caixa_menor{
+      width: 90%
+   }
+}
+
+@media only screen and (min-width: 481px){
+   .btn-group {
+      display: none;
+   }
 }
