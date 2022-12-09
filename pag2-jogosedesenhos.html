@@ -1,0 +1,127 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.25, minimum-scale=0.75">
+    <title> Entertainment Z. </title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel= "stylesheet" type="text/css" href="style.css">
+    
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo"> ENTERTAINMENT Z </h1>
+    </header>
+
+    <nav>
+      <ul id="nav">
+      <li><button type="button" class="navItens"><a href="pag1-home.html"> HOME </a></button></li>
+      <li><button type="button" class="navItens"><a href="pag2-jogosedesenhos.html"> JOGOS E DESENHOS </a></button></li>
+      <li><button type="button" class="navItens"><a href="pag3-faleconosco.html"> FALE CONOSCO </a></button></li>
+      <ul>
+    </nav>
+
+    <div class="w-100 btn-group" style="color:#ff7300">
+      <button
+        class="btn btn-primary w-100 dropdown-toggle"
+        style="color:#ff7300; font-weight: bold;"
+        type="button"
+        data-mdb-toggle="dropdown"
+        aria-expanded="false">
+        MENU
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="pag1-home.html"> HOME </a></li>
+        <li><a class="dropdown-item" href="pag2-jogosedesenhos.html"> JOGOS E DESENHOS </a></li>
+        <li><a class="dropdown-item" href="pag3-faleconosco.html"> FALE CONOSCO</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    
+    <main>
+      <article class="container">
+        <section class="caixa_esquerda">
+          <h1 class="h1">JOGOS</h1>
+          <h2 class="title">Subway Surfers</h2>
+          <img src="media/subwaysurfer_img.jpg" alt="Subway Surfer Image">
+          <video controls>
+            <source src="media/subwaysurfer_vid.mp4" type="video/mp4">
+          </video>
+        </section>
+        <section class="caixa_esquerda">
+          <h2 class="title">Fire Boy e Water Girl</h2>
+          <img src="media/firewater_img.jpg" alt="Fire Water Image">
+          <video controls>
+            <source src="media/firewater_vid.mp4" type="video/mp4">
+          </video>
+        </section>
+      </article>
+      <br>
+      <article class="container">
+        <section>
+          <h1 class="h1">DESENHOS</h1>
+          <h2 class="title">Os Sete Monstrinhos</h2>
+          <img class="gif" src="media/7monsters_1.gif" alt="7 Monstrinhos 1">
+          <img class="gif" src="media/7monsters_2.gif" alt="7 Monstrinhos 2">
+          <p class="text">Com um total de 39 episódios, distribuídos entre os anos de 2000 à 2003, a história num primeiro momento
+            apresenta uma família de sete monstrinhos criados por sua mãe de aparência senil, humilde e humana que vivem 
+            na fictícia na rua Castanheira, nº 1234567, Centerville, U.S.A.</p>
+        </section>
+        <section>
+          <h2 class="title">A Vaca e o Frango</h2>
+          <img class="gif" src="media/vacafrango_1.gif" alt="Vaca e o Frango 1">
+          <img class="gif" src="media/vacafrango_2.gif" alt="Vaca e o Frango 2">
+          <p class="text">É uma série de desenho animado produzida pela Hanna-Barbera e Cartoon Network e exibida no Brasil pelo
+          Cartoon Network, criada por David Feiss em 15 de dezembro de 1995 com o lançamento de um episódio piloto. 
+          O desenho foi um dos primeiros Cartoon Cartoons a serem produzidos. Cow and Chicken teve um total de 
+          52 episódios divididos em quatro temporadas que foram produzidos entre 15 de julho de 1997 e 24 de julho de 1999.</p>
+        </section>
+        <section>
+          <h2 class="title">Coragem, O Cão Covarde</h2>
+          <img class="gif" src="media/coragem1.gif" alt="Coragem 1">
+          <img class="gif" src="media/coragem2.gif" alt="Coragem 2">
+          <p class="text">Coragem, o Cão Covarde conta a história de Coragem, um cachorro facilmente assustado que vive em uma fazenda 
+            com Muriel e Eustácio Bagge, na cidade fictícia de Lugar Nenhum, no Kansas. Abandonado quando filhote, Coragem
+            foi encontrado em um beco por Muriel Bagge, uma mulher escocesa de natureza doce e seu marido Eustácio, um
+            fazendeiro mal-humorado e ganancioso que gosta de assustá-lo.
+            Coragem, Eustácio e Muriel frequentemente encontram monstros, alienígenas, demônios, cientistas loucos,
+            zumbis e outros perigos que Coragem deve afastar para salvar seus donos, sem o conhecimento deles.
+            Embora a maioria das criaturas que os três enfrentam sejam assustadoras e perturbadoras, algumas acabam
+            por serem doces ou simplesmente angustiadas.</p>
+        </section>
+      </article>  
+
+      <aside text-align="right">
+        <a href="#"> PROPAGANDA... </a>
+      </aside>
+    </main>
+    <footer>
+      <div class="caixa_menor">
+        <ul class="creator_info">
+          <li><span id="name"> </span></li>
+          <li><span id="gender"></span></li>
+          <li><span id="current_year"></span></li>
+          <li><span id="university_location"></span></li>
+        </ul>
+        <ul class="social_icon">
+          <li><span id="linkedin"></span></li>
+          <li><span id="instagram"></span></li>
+          <li><span id="github"></span></li>
+          <li><span id="email"></span></li>
+      </ul>
+      </ul>
+      <ul class="menu">
+        <li><a href="pag1-home.html">HOME</a></li>
+        <li><a href="pag2-jogosedesenhos.html">JOGOS E DESENHOS</a></li>
+        <li><a href="pag3-faleconosco.html"> FALE CONOSCO</a></li>
+      </ul>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
