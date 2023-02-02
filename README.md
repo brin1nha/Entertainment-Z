@@ -36,4 +36,4 @@ To run this project locally, you will need to have Node.js and npm (Node package
 Feel free to contribute to the project by submitting pull requests or reporting bugs. Let's make this game website the best it can be!
 
 ### License
-This project is under the MIT license. See the [LICENSE](https://chat.openai.com/chat/LICENSE) file for more details.
+This project is under the MIT license. See the [LICENSE]([MIT License](https://opensource.org/licenses/MIT) file for more details.
